@@ -5,10 +5,10 @@ _tests_/
 _mocks_/
 build/
 src/
-|- index.js _______________________________ # app entry 
+|- index.js # app entry 
 |- images/ # images directory
 |- styles/ # styles directory
-|- components/ # components directory
+|- js/components # components directory
     |- App.jsx # App 
 
 config/
