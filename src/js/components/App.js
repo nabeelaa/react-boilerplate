@@ -1,6 +1,7 @@
-import React, { Component, Suspense } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import style from '../../styles/App.css';
-import hello from '../../images/hello.gif';
+
+const HomeComponent = lazy(() => import('./Home.js'));
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class App extends Component {
     return (
       <div className={style.app}>
         <Suspense fallback={<div>Loading...</div>}>
-          <img src={hello} alt="hello-world" />
+          <HomeComponent />
         </Suspense>
       </div>
     );
