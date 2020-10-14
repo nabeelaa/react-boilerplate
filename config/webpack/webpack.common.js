@@ -27,7 +27,6 @@ module.exports = {
         loader: 'eslint-loader',
         exclude: /(node_modules)/,
         options: {
-          formatter: eslint.CLIEngine.getFormatter('stylish'),
           emitWarning: process.env.NODE_ENV !== 'production',
         },
       },
